@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Lista produktów</title>
+
+</head>
+<body>
+
+<div class="baner">
+    <h1>Sklep u Mariana</h1>
+</div>
+
+<div class="list">
+    <h2>Lista produktów</h2>
+    <br/>
+
+    <p th:text="dana"></p>
+
+    <p>text</p>
+
+    <p th:each="product:${products}" th:text="|${product.getName} ${product.getPrice}|"></p>
+
+        <h3>Suma produktów to...</h3>
+
+
+    </ul>
+
+    <a href="/">Powrót na stonę główną</a>
+</div>
+
+</body>
+</html>

@@ -12,21 +12,15 @@
     <h1>Sklep u Mariana</h1>
 </div>
 
-<div class="list">
+<div class="list" >
     <h2>Lista produktów</h2>
     <br/>
-
-    <p th:text="dana"></p>
-
-    <p>text</p>
-
-    <p th:each="product:${products}" th:text="|${product.getName} ${product.getPrice}|"></p>
-
-        <h3>Suma produktów to...</h3>
-
-
+    <ul >
+        <li th:each="product:${products}" th:text="|${product.name}     ${product.price}|"></li>
     </ul>
-
+    <br/>
+    <h3><span th:text="|Suma produktów to  ${sum}|"></span></h3>
+    <br/>
     <a href="/">Powrót na stonę główną</a>
 </div>
 

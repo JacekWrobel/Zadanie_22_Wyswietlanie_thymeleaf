@@ -20,4 +20,12 @@ public class ProductRepository {
     public List<Product> getAll() {
         return products;
     }
+
+    public double sumOfProducts() {
+        double sum = 0;
+        for (Product product : products) {
+            sum += product.getPrice();
+        }
+        return sum;
+    }
 }
